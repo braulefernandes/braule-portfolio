@@ -1,0 +1,94 @@
+{
+  "Header": {
+    "navigationLabel": "Navegação principal",
+    "mobileNavigationLabel": "Navegação mobile",
+    "openMenu": "Abrir menu de navegação",
+    "closeMenu": "Fechar menu de navegação",
+    "languageLabel": "Selecionar idioma",
+    "languageCurrent": "Idioma atual: Português",
+    "links": {
+      "home": "Início",
+      "about": "Sobre",
+      "projects": "Projetos",
+      "technologies": "Tecnologias",
+      "experience": "Experiência",
+      "contact": "Contato"
+    }
+  },
+  "Theme": {
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema",
+    "loading": "Carregando tema",
+    "currentAndNext": "Tema atual: {current}. Alterar para {next}.",
+    "title": "Tema: {theme}"
+  },
+  "Hero": {
+    "greeting": "Olá, eu sou",
+    "technologiesLabel": "Tecnologias principais",
+    "projectsButton": "Conheça meus projetos",
+    "resumeButton": "Baixar currículo",
+    "resumeUnavailable": "Currículo disponível em breve",
+    "contactButton": "Entre em contato"
+  },
+  "About": {
+    "eyebrow": "Sobre mim",
+    "highlights": {
+      "locationLabel": "Localização",
+      "availabilityLabel": "Disponibilidade",
+      "educationLabel": "Formação",
+      "graduationLabel": "Conclusão",
+      "graduationPrefix": "Conclusão prevista"
+    }
+  },
+  "Education": {
+    "eyebrow": "Formação",
+    "title": "Construindo uma base sólida em computação."
+  },
+  "Technologies": {
+    "eyebrow": "Tecnologias e competências",
+    "title": "Ferramentas para construir soluções completas.",
+    "description": "Tecnologias utilizadas em aplicações web, APIs, dados e projetos de inteligência artificial.",
+    "featuredLabel": "Tecnologias em destaque",
+    "categoryLabel": "Tecnologias de {category}"
+  },
+  "Projects": {
+    "eyebrow": "Projetos",
+    "title": "Ideias transformadas em soluções funcionais.",
+    "description": "Projetos Full Stack, acadêmicos e de inteligência artificial desenvolvidos para resolver problemas reais e explorar diferentes áreas da tecnologia.",
+    "problemLabel": "Problema que resolve",
+    "technologiesLabel": "Tecnologias do projeto {title}",
+    "repositoriesLabel": "Repositórios do projeto {title}",
+    "externalLink": "abre em nova aba",
+    "visualLabel": "Representação abstrata do projeto {title}"
+  },
+  "Status": {
+    "WIP": "Em desenvolvimento",
+    "DONE": "Concluído"
+  },
+  "Experience": {
+    "professionalEyebrow": "Experiência profissional",
+    "professionalTitle": "Experiências que conectam tecnologia, organização e colaboração.",
+    "academicEyebrow": "Atividades acadêmicas",
+    "academicTitle": "Pesquisa aplicada e inovação tecnológica."
+  },
+  "Contact": {
+    "eyebrow": "Contato",
+    "title": "Vamos construir algo juntos?",
+    "sendEmail": "Enviar e-mail"
+  },
+  "Footer": {
+    "developedBy": "Desenvolvido por {name}",
+    "copyright": "© {year} {name}.",
+    "backToTop": "Voltar ao topo ↑"
+  },
+  "Social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "E-mail",
+    "externalLink": "abre em nova aba"
+  },
+  "Accessibility": {
+    "homeLabel": "Braule Fernandes — página inicial"
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "Header": {
+    "navigationLabel": "Main navigation",
+    "mobileNavigationLabel": "Mobile navigation",
+    "openMenu": "Open navigation menu",
+    "closeMenu": "Close navigation menu",
+    "languageLabel": "Select language",
+    "languageCurrent": "Current language: English",
+    "links": {
+      "home": "Home",
+      "about": "About",
+      "projects": "Projects",
+      "technologies": "Technologies",
+      "experience": "Experience",
+      "contact": "Contact"
+    }
+  },
+  "Theme": {
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "loading": "Loading theme",
+    "currentAndNext": "Current theme: {current}. Switch to {next}.",
+    "title": "Theme: {theme}"
+  },
+  "Hero": {
+    "greeting": "Hello, I'm",
+    "technologiesLabel": "Core technologies",
+    "projectsButton": "Explore my projects",
+    "resumeButton": "Download résumé",
+    "resumeUnavailable": "Résumé coming soon",
+    "contactButton": "Get in touch"
+  },
+  "About": {
+    "eyebrow": "About me",
+    "highlights": {
+      "locationLabel": "Location",
+      "availabilityLabel": "Availability",
+      "educationLabel": "Education",
+      "graduationLabel": "Graduation",
+      "graduationPrefix": "Expected graduation"
+    }
+  },
+  "Education": {
+    "eyebrow": "Education",
+    "title": "Building a strong foundation in computer science."
+  },
+  "Technologies": {
+    "eyebrow": "Technologies and skills",
+    "title": "Tools for building complete solutions.",
+    "description": "Technologies used across web applications, APIs, data work, and artificial intelligence projects.",
+    "featuredLabel": "Featured technologies",
+    "categoryLabel": "Technologies in {category}"
+  },
+  "Projects": {
+    "eyebrow": "Projects",
+    "title": "Ideas turned into functional solutions.",
+    "description": "Full Stack, academic, and artificial intelligence projects developed to solve real problems and explore different areas of technology.",
+    "problemLabel": "Problem addressed",
+    "technologiesLabel": "Technologies used in {title}",
+    "repositoriesLabel": "Repositories for {title}",
+    "externalLink": "opens in a new tab",
+    "visualLabel": "Abstract representation of the {title} project"
+  },
+  "Status": {
+    "WIP": "In progress",
+    "DONE": "Completed"
+  },
+  "Experience": {
+    "professionalEyebrow": "Professional experience",
+    "professionalTitle": "Experience connecting technology, organization, and collaboration.",
+    "academicEyebrow": "Academic activities",
+    "academicTitle": "Applied research and technological innovation."
+  },
+  "Contact": {
+    "eyebrow": "Contact",
+    "title": "Let's build something together.",
+    "sendEmail": "Send an email"
+  },
+  "Footer": {
+    "developedBy": "Developed by {name}",
+    "copyright": "© {year} {name}.",
+    "backToTop": "Back to top ↑"
+  },
+  "Social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "Email",
+    "externalLink": "opens in a new tab"
+  },
+  "Accessibility": {
+    "homeLabel": "Braule Fernandes — home page"
+  }
+}
