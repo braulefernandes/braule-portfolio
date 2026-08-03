@@ -1,7 +1,7 @@
 import { ImageResponse } from "next/og";
 import { personalInfo } from "@/data/personal-info";
 
-export const alt = `${personalInfo.monogram} — ${personalInfo.name}, ${personalInfo.shareTitle}`;
+export const alt = `${personalInfo.name} — ${personalInfo.shareTitle}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -43,7 +43,7 @@ export default function OpenGraphImage() {
             width: 1040,
           }}
         >
-          <div style={{ color: "#a855f7", display: "flex", fontSize: 62, fontWeight: 800, letterSpacing: 8 }}>{personalInfo.monogram}</div>
+          <div style={{ color: "#a855f7", display: "flex", fontSize: 54, fontWeight: 800, letterSpacing: -2 }}>{`<${personalInfo.visualSignature} />`}</div>
           <div style={{ display: "flex", fontSize: 70, fontWeight: 750, letterSpacing: -3, marginTop: 56 }}>{personalInfo.name}</div>
           <div style={{ color: "#94a3b8", display: "flex", fontSize: 34, marginTop: 18 }}>{personalInfo.shareTitle}</div>
           <div

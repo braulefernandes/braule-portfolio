@@ -3,6 +3,7 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { Montserrat } from "next/font/google";
 import { notFound } from "next/navigation";
+import Script from "next/script";
 
 import { routing } from "@/i18n/routing";
 import { personalInfo } from "@/data/personal-info";
@@ -62,13 +63,13 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       siteName: siteConfig.name,
-      images: [{ url: `${canonicalPath}/opengraph-image`, width: 1200, height: 630, alt: `${personalInfo.monogram} — ${personalInfo.name}, ${personalInfo.shareTitle}` }],
+      images: [{ url: `${canonicalPath}/opengraph-image`, width: 1200, height: 630, alt: `${personalInfo.name} — ${personalInfo.shareTitle}` }],
     },
     twitter: {
       card: "summary_large_image",
       title,
       description,
-      images: [{ url: `${canonicalPath}/opengraph-image`, alt: `${personalInfo.monogram} — ${personalInfo.name}, ${personalInfo.shareTitle}` }],
+      images: [{ url: `${canonicalPath}/opengraph-image`, alt: `${personalInfo.name} — ${personalInfo.shareTitle}` }],
     },
     robots: {
       index: true,
@@ -118,7 +119,8 @@ export default async function LocaleLayout({ children, params }: Props) {
   return (
     <html lang={locale === "pt" ? "pt-BR" : "en"} className={`${montserrat.variable} h-full`} suppressHydrationWarning>
       <body className="min-h-full antialiased">
-        <script
+        <Script
+          id={`profile-page-json-ld-${locale}`}
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
         />

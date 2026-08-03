@@ -2,19 +2,13 @@
 
 import { motion, useReducedMotion } from "motion/react";
 import { useLocale, useTranslations } from "next-intl";
+import { ExternalLinkIcon } from "@/components/icons/external-link-icon";
 import type { Project } from "@/types";
 import { getLocalizedText } from "@/utils/localized-content";
 
 import { ProjectVisual } from "./project-visual";
+import { InteractiveGlow } from "./interactive-glow";
 import { StatusBadge } from "./status-badge";
-
-function ExternalLinkIcon() {
-  return (
-    <svg aria-hidden="true" viewBox="0 0 24 24" className="size-4" fill="none" stroke="currentColor" strokeWidth="2">
-      <path d="M14 5h5v5M19 5l-8 8M19 14v4a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h4" />
-    </svg>
-  );
-}
 
 export function ProjectCard({ project }: { project: Project }) {
   const reduceMotion = useReducedMotion();
@@ -23,10 +17,11 @@ export function ProjectCard({ project }: { project: Project }) {
 
   return (
     <motion.article
-      className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-[background-color,border-color,box-shadow] hover:border-primary hover:shadow-[0_20px_60px_var(--shadow)] focus-within:border-primary focus-within:shadow-[0_20px_60px_var(--shadow)]"
+      className="interactive-surface group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-[background-color,border-color,box-shadow] hover:border-primary focus-within:border-primary"
       whileHover={reduceMotion ? undefined : { y: -4 }}
       transition={{ duration: 0.2 }}
     >
+      <InteractiveGlow />
       <ProjectVisual visual={project.visual} title={project.title} />
 
       <div className="flex flex-1 flex-col p-5 sm:p-6">
@@ -58,7 +53,7 @@ export function ProjectCard({ project }: { project: Project }) {
               href={repository.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-border bg-surface-elevated px-3.5 text-sm font-semibold text-foreground transition-[border-color,color,transform] hover:border-primary hover:text-primary active:scale-[0.98]"
+              className="external-action inline-flex min-h-11 items-center gap-2 rounded-lg border border-border bg-surface-elevated px-3.5 text-sm font-semibold text-foreground transition-[border-color,color,transform] hover:border-primary hover:text-primary active:scale-[0.98]"
             >
               {repository.label}
               <ExternalLinkIcon />

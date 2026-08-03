@@ -2,7 +2,7 @@
 
 import { useLocale, useTranslations } from "next-intl";
 
-import { usePathname, useRouter } from "@/i18n/navigation";
+import { usePathname } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
 
 const locales: Array<{ locale: AppLocale; label: string }> = [
@@ -13,13 +13,12 @@ const locales: Array<{ locale: AppLocale; label: string }> = [
 export function LanguageSwitcher() {
   const currentLocale = useLocale();
   const pathname = usePathname();
-  const router = useRouter();
   const t = useTranslations("Header");
 
   function changeLocale(locale: AppLocale) {
     if (locale === currentLocale) return;
-    const hash = window.location.hash;
-    router.replace(`${pathname}${hash}`, { locale });
+    const localizedPath = `/${locale}${pathname === "/" ? "" : pathname}`;
+    window.location.assign(`${localizedPath}${window.location.search}${window.location.hash}`);
   }
 
   return (

@@ -16,6 +16,15 @@ O conteúdo profissional do portfólio é editado diretamente em `src/data`. Os 
 
 Os tipos estão centralizados em `src/types/portfolio.ts`. O TypeScript valida status, formatos de URL, campos bilíngues, categorias e elementos visuais.
 
+A assinatura tecnológica também é alterada em um único lugar, em `src/data/personal-info.ts`:
+
+```ts
+visualSignature: "BrauleFernandes",
+compactSignature: "BF",
+```
+
+`visualSignature` gera visualmente `<BrauleFernandes />` no Header, Hero, Footer e compartilhamento social. `compactSignature` é reservada para ícones muito pequenos. Informe apenas o texto interno, sem digitar `<`, `/` ou `>`.
+
 ## Como adicionar um projeto
 
 Adicione um objeto ao array `projects` em `src/data/projects.ts`:

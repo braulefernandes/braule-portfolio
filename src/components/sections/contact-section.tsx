@@ -5,6 +5,7 @@ import { buttonStyles } from "@/components/ui/button";
 import { SectionTitle } from "@/components/ui/section-title";
 import { SocialLink } from "@/components/ui/social-link";
 import { Reveal } from "@/components/ui/motion";
+import { InteractiveGlow } from "@/components/ui/interactive-glow";
 import { socialLinks } from "@/data/social-links";
 import { personalInfo } from "@/data/personal-info";
 import { getLocalizedText } from "@/utils/localized-content";
@@ -23,7 +24,8 @@ export function ContactSection() {
   return (
     <Section id="contato" aria-labelledby="contact-title" className="scroll-mt-18 border-t border-border bg-background">
       <Reveal>
-      <div className="relative overflow-hidden rounded-3xl border border-border bg-surface p-5 shadow-[0_24px_80px_var(--shadow)] sm:p-10 lg:p-12">
+      <div className="interactive-surface relative overflow-hidden rounded-3xl border border-border bg-surface p-5 shadow-[0_24px_80px_var(--shadow)] sm:p-10 lg:p-12">
+        <InteractiveGlow />
         <div aria-hidden="true" className="absolute -right-24 -top-24 size-72 rounded-full bg-[var(--glow-primary)] blur-3xl" />
         <div className="relative grid gap-10 lg:grid-cols-[1fr_0.75fr] lg:items-end">
           <div>

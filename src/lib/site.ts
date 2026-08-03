@@ -14,7 +14,8 @@ export const siteUrl = configuredUrl
 
 export const siteConfig = {
   name: personalInfo.name,
-  monogram: personalInfo.monogram,
+  visualSignature: personalInfo.visualSignature,
+  compactSignature: personalInfo.compactSignature,
   email: personalInfo.contacts.email,
   github: personalInfo.contacts.github,
   linkedin: personalInfo.contacts.linkedin,

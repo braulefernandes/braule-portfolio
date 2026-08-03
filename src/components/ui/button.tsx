@@ -14,7 +14,7 @@ const variants: Record<ButtonVariant, string> = {
 };
 
 export function buttonStyles(variant: ButtonVariant = "primary", className = "") {
-  return `inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-4 text-sm font-semibold transition-[background-color,border-color,color,transform] active:scale-[0.98] ${variants[variant]} ${className}`;
+  return `interactive-button interactive-button-${variant} inline-flex min-h-11 items-center justify-center gap-2 rounded-lg px-4 text-sm font-semibold transition-[background-color,border-color,color,box-shadow,transform] active:scale-[0.98] ${variants[variant]} ${className}`;
 }
 
 export function Button({

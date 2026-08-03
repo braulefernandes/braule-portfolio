@@ -2,9 +2,10 @@ import type { PersonalInfo } from "@/types";
 
 export const personalInfo = {
   name: "Braule Fernandes",
-  monogram: "BF_",
+  visualSignature: "BrauleFernandes",
+  compactSignature: "BF",
   professionalTitle: {
-    pt: "Desenvolvedor Full Stack em formação",
+    pt: "Desenvolvedor Full-Stack em formação",
     en: "Full Stack Developer in training",
   },
   shareTitle: "Full Stack Developer",

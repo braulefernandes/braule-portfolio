@@ -25,6 +25,7 @@
   },
   "Hero": {
     "greeting": "Hello, I'm",
+    "caricatureAlt": "Caricature of Braule Fernandes wearing a headset and holding a cup of coffee",
     "technologiesLabel": "Core technologies",
     "projectsButton": "Explore my projects",
     "resumeButton": "Download résumé",
@@ -80,7 +81,7 @@
   "Footer": {
     "developedBy": "Developed by {name}",
     "copyright": "© {year} {name}.",
-    "backToTop": "Back to top ↑"
+    "backToTop": "Back to top"
   },
   "Social": {
     "github": "GitHub",

@@ -1,4 +1,6 @@
 export { Button, buttonStyles } from "./button";
+export { BrandSignature } from "./brand-signature";
+export { InteractiveGlow } from "./interactive-glow";
 export type { ButtonVariant } from "./button";
 export { InfoCard } from "./info-card";
 export { Logo } from "./logo";

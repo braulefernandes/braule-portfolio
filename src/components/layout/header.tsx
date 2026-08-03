@@ -14,6 +14,7 @@ import { Container } from "./container";
 export function Header() {
   const t = useTranslations("Header");
   const [isOpen, setIsOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
   const reduceMotion = useReducedMotion();
@@ -50,15 +51,29 @@ export function Header() {
     return () => desktopQuery.removeEventListener("change", closeOnDesktop);
   }, []);
 
+  useEffect(() => {
+    let frame = 0;
+    const updateHeader = () => {
+      cancelAnimationFrame(frame);
+      frame = requestAnimationFrame(() => setIsScrolled(window.scrollY > 20));
+    };
+    updateHeader();
+    window.addEventListener("scroll", updateHeader, { passive: true });
+    return () => {
+      cancelAnimationFrame(frame);
+      window.removeEventListener("scroll", updateHeader);
+    };
+  }, []);
+
   function closeMenu() {
     setIsOpen(false);
     window.requestAnimationFrame(() => menuButtonRef.current?.focus());
   }
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-[var(--overlay)] backdrop-blur-xl">
-      <Container className="flex h-18 items-center justify-between gap-4">
-        <Logo />
+    <header data-scrolled={isScrolled} className="site-header fixed inset-x-0 top-0 z-50 border-b border-border bg-[var(--overlay)] backdrop-blur-xl">
+      <Container className="flex h-18 items-center justify-between gap-1 sm:gap-3">
+        <Logo className="shrink min-[390px]:shrink-0" />
 
         <nav aria-label={t("navigationLabel")} className="hidden lg:block">
           <ul className="flex items-center gap-1">
@@ -66,7 +81,7 @@ export function Header() {
               <li key={item.href}>
                 <a
                   href={item.href}
-                  className="inline-flex min-h-11 items-center rounded-lg px-3 py-2 text-sm font-medium text-muted transition-colors hover:bg-surface hover:text-foreground"
+                  className="nav-link inline-flex min-h-11 items-center rounded-lg px-3 py-2 text-sm font-medium text-muted transition-colors hover:bg-surface hover:text-foreground"
                 >
                   {t(`links.${item.id}`)}
                 </a>
@@ -76,8 +91,10 @@ export function Header() {
         </nav>
 
         <div className="flex items-center gap-1">
-          <LanguageSwitcher />
-          <ThemeToggle />
+          <div className="hidden lg:block">
+            <LanguageSwitcher />
+          </div>
+          {/* <ThemeToggle /> */}
           <button
             ref={menuButtonRef}
             type="button"
@@ -107,6 +124,10 @@ export function Header() {
           >
             <nav aria-label={t("mobileNavigationLabel")} className="h-full overflow-y-auto">
               <Container className="py-6">
+                <div className="mb-5 flex items-center justify-between border-b border-border pb-5">
+                  <Logo variant="footer" />
+                  <LanguageSwitcher />
+                </div>
                 <ul className="flex flex-col gap-2">
                   {navigationLinks.map((item, index) => (
                     <li key={item.href}>

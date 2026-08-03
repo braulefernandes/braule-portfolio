@@ -35,7 +35,7 @@ export function AboutSection() {
         <RevealGrid className="grid content-start gap-3 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
           {highlightKeys.map((key) => (
             <RevealItem key={key}>
-              <InfoCard label={t(`highlights.${key}Label`)}>{highlights[key]}</InfoCard>
+              <InfoCard label={t(`highlights.${key}Label`)} active={key === "availability"}>{highlights[key]}</InfoCard>
             </RevealItem>
           ))}
         </RevealGrid>

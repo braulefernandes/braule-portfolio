@@ -16,7 +16,8 @@ export interface ContactInfo {
 
 export interface PersonalInfo {
   name: string;
-  monogram: string;
+  visualSignature: string;
+  compactSignature: string;
   professionalTitle: LocalizedText;
   shareTitle: string;
   heroDescription: LocalizedText;

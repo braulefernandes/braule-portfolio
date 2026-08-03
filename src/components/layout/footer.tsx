@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 
 import { Container } from "@/components/layout/container";
+import { ChevronIcon } from "@/components/icons/chevron-icon";
 import { Logo } from "@/components/ui/logo";
 import { SocialLink } from "@/components/ui/social-link";
 import { personalInfo } from "@/data/personal-info";
@@ -15,7 +16,7 @@ export function Footer() {
       <Container>
         <div className="grid gap-8 sm:grid-cols-2 sm:items-end">
           <div>
-            <Logo />
+            <Logo variant="footer" />
             <p className="mt-3 font-semibold text-foreground">{personalInfo.name}</p>
             <p className="mt-1 text-sm text-muted">{t("developedBy", { name: personalInfo.name })}</p>
           </div>
@@ -29,8 +30,9 @@ export function Footer() {
 
         <div className="mt-8 flex flex-col gap-3 border-t border-border pt-6 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
           <p>{t("copyright", { year: currentYear, name: personalInfo.name })}</p>
-          <a href="#inicio" className="inline-flex min-h-11 w-fit items-center font-semibold text-foreground transition-colors hover:text-primary">
+          <a href="#inicio" className="chevron-action inline-flex min-h-11 w-fit items-center gap-2 font-semibold text-foreground transition-colors hover:text-primary">
             {t("backToTop")}
+            <ChevronIcon direction="up" />
           </a>
         </div>
       </Container>

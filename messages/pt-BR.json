@@ -25,6 +25,7 @@
   },
   "Hero": {
     "greeting": "Olá, eu sou",
+    "caricatureAlt": "Caricatura de Braule Fernandes usando headset e segurando um copo de café",
     "technologiesLabel": "Tecnologias principais",
     "projectsButton": "Conheça meus projetos",
     "resumeButton": "Baixar currículo",
@@ -80,7 +81,7 @@
   "Footer": {
     "developedBy": "Desenvolvido por {name}",
     "copyright": "© {year} {name}.",
-    "backToTop": "Voltar ao topo ↑"
+    "backToTop": "Voltar ao topo"
   },
   "Social": {
     "github": "GitHub",
