@@ -1,7 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
-import { Montserrat } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import Script from "next/script";
 
@@ -14,9 +14,18 @@ import { toPortfolioLocale } from "@/utils/localized-content";
 
 import "../globals.css";
 
-const montserrat = Montserrat({
-  variable: "--font-montserrat",
+const geistSans = Geist({
+  variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap",
+  fallback: ["Arial", "Helvetica", "sans-serif"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+  display: "swap",
+  fallback: ["Courier New", "monospace"],
 });
 
 type Props = {
@@ -117,7 +126,11 @@ export default async function LocaleLayout({ children, params }: Props) {
   };
 
   return (
-    <html lang={locale === "pt" ? "pt-BR" : "en"} className={`${montserrat.variable} h-full`} suppressHydrationWarning>
+    <html
+      lang={locale === "pt" ? "pt-BR" : "en"}
+      className={`${geistSans.variable} ${geistMono.variable} h-full`}
+      suppressHydrationWarning
+    >
       <body className="min-h-full antialiased">
         <Script
           id={`profile-page-json-ld-${locale}`}

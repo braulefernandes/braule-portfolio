@@ -10,7 +10,7 @@ Portfólio profissional bilíngue de Braule Fernandes. Apresenta sua formação 
 - `next-intl` para português e inglês
 - `next-themes` para temas claro, escuro e sistema
 - Motion para animações e suporte a movimento reduzido
-- Montserrat via `next/font`
+- Geist Sans e Geist Mono via `next/font`
 - ESLint
 
 ## Instalação

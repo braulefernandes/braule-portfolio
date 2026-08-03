@@ -91,7 +91,8 @@
   --color-success-surface: var(--success-surface);
   --color-warning: var(--warning);
   --color-warning-surface: var(--warning-surface);
-  --font-sans: var(--font-montserrat);
+  --font-sans: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+  --font-mono: var(--font-geist-mono), "Courier New", monospace;
 }
 
 * {
@@ -110,7 +111,7 @@ body {
   overflow-x: clip;
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-montserrat), sans-serif;
+  font-family: var(--font-sans);
   transition: background-color 160ms ease, color 160ms ease;
 }
 
@@ -174,12 +175,16 @@ a:not([class]):hover {
   color: transparent;
   font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
 }
 
 .hero-name-gradient {
   color: var(--hero-name-gradient-primary);
+}
+
+#hero-title {
+  letter-spacing: -0.04em;
 }
 
 @supports ((background-clip: text) or (-webkit-background-clip: text)) {
@@ -209,7 +214,7 @@ a:not([class]):hover {
   max-width: 100%;
   align-items: baseline;
   color: var(--signature-color);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   font-weight: 750;
   letter-spacing: -0.045em;
   line-height: 1;
@@ -375,7 +380,7 @@ a:not([class]):hover {
 .tech-symbol {
   position: absolute;
   color: var(--primary);
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: var(--font-mono);
   font-weight: 700;
   opacity: 0.12;
   transform: translate3d(var(--hero-shift-x), var(--hero-shift-y), 0);

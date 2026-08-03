@@ -28,8 +28,7 @@
     "caricatureAlt": "Caricatura de Braule Fernandes usando headset e segurando um copo de café",
     "technologiesLabel": "Tecnologias principais",
     "projectsButton": "Conheça meus projetos",
-    "resumeButton": "Baixar currículo",
-    "resumeUnavailable": "Currículo disponível em breve",
+    "experienceButton": "Ver minhas experiências",
     "contactButton": "Entre em contato"
   },
   "About": {
@@ -70,6 +69,10 @@
   "Experience": {
     "professionalEyebrow": "Experiência profissional",
     "professionalTitle": "Experiências que conectam tecnologia, organização e colaboração.",
+    "resumeTitle": "Quer conhecer minha trajetória completa?",
+    "resumeDescription": "Baixe meu currículo para conferir mais detalhes sobre minha formação, experiências e competências.",
+    "resumeButton": "Baixar currículo",
+    "resumeUnavailable": "Currículo disponível em breve",
     "academicEyebrow": "Atividades acadêmicas",
     "academicTitle": "Pesquisa aplicada e inovação tecnológica."
   },

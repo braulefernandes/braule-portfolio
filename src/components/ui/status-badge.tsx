@@ -26,7 +26,9 @@ export function StatusBadge({ status }: StatusBadgeProps) {
       className={`status-badge status-badge-${status.toLowerCase()} inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold ${config.className}`}
     >
       <span aria-hidden="true" className="status-badge-dot size-1.5 rounded-full bg-current" />
-      {t(status)}
+      <span className="font-mono">{status}</span>
+      <span aria-hidden="true">&mdash;</span>
+      <span>{t(status)}</span>
     </span>
   );
 }
