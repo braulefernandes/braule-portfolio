@@ -1,16 +1,19 @@
 import { useTranslations } from "next-intl";
 
-import { Section } from "@/components/layout/section";
+import { Container } from "@/components/layout/container";
+import { SkillsOrbitBackground } from "@/components/decorations/skills-orbit-background";
+import { CoreTechnologyCard } from "@/components/skills/core-technology-card";
+import { SkillCategoryCard } from "@/components/skills/skill-category-card";
 import { SectionTitle } from "@/components/ui/section-title";
 import { RevealGrid, RevealItem } from "@/components/ui/motion";
-import { TechnologyCard } from "@/components/ui/technology-card";
-import { InteractiveGlow } from "@/components/ui/interactive-glow";
-import { featuredSkills, skillCategories } from "@/data/skills";
+import { coreTechnologies, skillCategories } from "@/data/skills";
 
 export function TechnologiesSection() {
   const t = useTranslations("Technologies");
   return (
-    <Section id="tecnologias" aria-labelledby="technologies-title" className="scroll-mt-18 border-t border-border bg-background-secondary">
+    <section id="tecnologias" aria-labelledby="technologies-title" className="skills-section relative isolate scroll-mt-18 overflow-hidden border-t border-border py-16 sm:py-16 lg:py-20 xl:py-24">
+      <SkillsOrbitBackground />
+      <Container className="relative z-10">
       <SectionTitle
         eyebrow={t("eyebrow")}
         title={t("title")}
@@ -18,24 +21,28 @@ export function TechnologiesSection() {
         id="technologies-title"
       />
 
-      <RevealGrid role="list" className="mt-10 grid grid-cols-2 gap-3 sm:grid-cols-4">
-        {featuredSkills.map((technology) => (
-          <RevealItem key={technology} role="listitem">
-            <div className="interactive-surface rounded-xl border border-border bg-[var(--overlay)] px-3 py-4 text-center text-sm font-bold text-foreground shadow-[0_8px_28px_var(--shadow)] backdrop-blur-sm transition-[border-color,transform] hover:-translate-y-0.5 hover:border-primary">
-              <InteractiveGlow />
-              <span>{technology}</span>
-            </div>
-          </RevealItem>
-        ))}
-      </RevealGrid>
+      <div className="skills-content">
+        <RevealItem className="mt-9"><h3 className="skills-group-label">{t("coreTitle")}</h3></RevealItem>
+        <RevealGrid role="list" className="mt-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {coreTechnologies.map((technology) => (
+            <RevealItem key={technology.id} role="listitem" className="h-full">
+              <CoreTechnologyCard technology={technology} />
+            </RevealItem>
+          ))}
+        </RevealGrid>
 
-      <RevealGrid className="mt-8 grid gap-4 md:grid-cols-2">
-        {skillCategories.map((category) => (
-          <RevealItem key={category.id} className="h-full">
-            <TechnologyCard category={category} />
-          </RevealItem>
-        ))}
-      </RevealGrid>
-    </Section>
+        <RevealItem className="skills-ecosystem-connector"><span>{t("ecosystemConnector")}</span></RevealItem>
+        <RevealItem><h3 className="skills-group-label">{t("ecosystemTitle")}</h3></RevealItem>
+        <div className="skill-ecosystem-grid-wrap">
+          <svg aria-hidden="true" className="skill-ecosystem-connections" viewBox="0 0 1000 620" preserveAspectRatio="none"><path d="M250 145H500V310H750M250 475H500V310"/><circle cx="500" cy="310" r="5"/><path className="skill-ecosystem-pulse" d="M250 145H500V310H750"/></svg>
+          <RevealGrid className="mt-4 grid gap-4 md:grid-cols-2">
+            {skillCategories.map((category) => (
+              <RevealItem key={category.id} className="h-full"><SkillCategoryCard category={category} /></RevealItem>
+            ))}
+          </RevealGrid>
+        </div>
+      </div>
+      </Container>
+    </section>
   );
 }

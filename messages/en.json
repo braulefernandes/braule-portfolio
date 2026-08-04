@@ -49,6 +49,9 @@
     "eyebrow": "Technologies and skills",
     "title": "Tools for building complete solutions.",
     "description": "Technologies used across web applications, APIs, data work, and artificial intelligence projects.",
+    "coreTitle": "Core technologies",
+    "ecosystemTitle": "Skills ecosystem",
+    "ecosystemConnector": "Full Stack ecosystem",
     "featuredLabel": "Featured technologies",
     "categoryLabel": "Technologies in {category}"
   },
@@ -56,11 +59,16 @@
     "eyebrow": "Projects",
     "title": "Ideas turned into functional solutions.",
     "description": "Full Stack, academic, and artificial intelligence projects developed to solve real problems and explore different areas of technology.",
+    "inProgressGroup": "In progress",
+    "completedGroup": "Completed",
     "problemLabel": "Problem addressed",
     "technologiesLabel": "Technologies used in {title}",
     "repositoriesLabel": "Repositories for {title}",
     "externalLink": "opens in a new tab",
-    "visualLabel": "Abstract representation of the {title} project"
+    "visualLabel": "Abstract representation of the {title} project",
+    "showMoreTechnologies": "Show {count} more technologies used in {title}",
+    "showFewerTechnologies": "Collapse technologies used in {title}",
+    "showFewer": "Less"
   },
   "Status": {
     "WIP": "In progress",
@@ -69,22 +77,36 @@
   "Experience": {
     "professionalEyebrow": "Professional experience",
     "professionalTitle": "Experience connecting technology, organization, and collaboration.",
+    "currentBadge": "Current",
     "resumeTitle": "Want to see my full professional journey?",
     "resumeDescription": "Download my résumé to learn more about my education, experience and skills.",
     "resumeButton": "Download résumé",
-    "resumeUnavailable": "Résumé available soon",
-    "academicEyebrow": "Academic activities",
-    "academicTitle": "Applied research and technological innovation."
+    "resumeUnavailable": "Résumé available soon"
   },
   "Contact": {
     "eyebrow": "Contact",
     "title": "Let's build something together.",
-    "sendEmail": "Send an email"
+    "description": "I am available for internships, Junior Full Stack roles, freelance projects, and collaborations.",
+    "supportingCopy": "If you have an idea or would like to talk, I would be glad to connect.",
+    "sendEmail": "Send email",
+    "sendEmailAccessibleLabel": "Send an email to Braule Fernandes",
+    "emailLabel": "Email",
+    "githubTitle": "GitHub",
+    "githubDescription": "See my projects, code and contributions.",
+    "linkedinTitle": "LinkedIn",
+    "linkedinDescription": "Learn more about my professional journey.",
+    "emailTitle": "Email",
+    "emailDescription": "braulefernandesdev@gmail.com",
+    "emailAccessibleLabel": "Send an email to Braule Fernandes",
+    "locationTitle": "Location",
+    "locationDescription": "Fortaleza • Ceará • Brazil",
+    "externalLink": "opens in a new tab"
   },
   "Footer": {
-    "developedBy": "Developed by {name}",
+    "professionalTitle": "Full Stack Developer in training.",
     "copyright": "© {year} {name}.",
-    "backToTop": "Back to top"
+    "backToTop": "Back to top",
+    "emailAccessibleLabel": "Send an email to Braule Fernandes"
   },
   "Social": {
     "github": "GitHub",

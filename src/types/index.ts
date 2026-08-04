@@ -1,9 +1,15 @@
 export type {
+  AboutHighlight,
+  AboutHighlightIcon,
+  AboutHighlightVariant,
   ContactInfo,
+  CoreTechnology,
+  CoreTechnologyVisual,
   Education,
   EmailUrl,
   Experience,
   ExperienceKind,
+  ExperienceVisual,
   ExternalUrl,
   LocalizedStringList,
   LocalizedText,
@@ -14,6 +20,7 @@ export type {
   ProjectStatus,
   ProjectVisual,
   SkillCategory,
+  SkillCategoryIcon,
   SocialIcon,
   SocialLink,
 } from "./portfolio";

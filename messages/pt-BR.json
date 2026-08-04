@@ -49,6 +49,9 @@
     "eyebrow": "Tecnologias e competências",
     "title": "Ferramentas para construir soluções completas.",
     "description": "Tecnologias utilizadas em aplicações web, APIs, dados e projetos de inteligência artificial.",
+    "coreTitle": "Tecnologias principais",
+    "ecosystemTitle": "Ecossistema de competências",
+    "ecosystemConnector": "Ecossistema Full Stack",
     "featuredLabel": "Tecnologias em destaque",
     "categoryLabel": "Tecnologias de {category}"
   },
@@ -56,11 +59,16 @@
     "eyebrow": "Projetos",
     "title": "Ideias transformadas em soluções funcionais.",
     "description": "Projetos Full Stack, acadêmicos e de inteligência artificial desenvolvidos para resolver problemas reais e explorar diferentes áreas da tecnologia.",
+    "inProgressGroup": "Em desenvolvimento",
+    "completedGroup": "Concluídos",
     "problemLabel": "Problema que resolve",
     "technologiesLabel": "Tecnologias do projeto {title}",
     "repositoriesLabel": "Repositórios do projeto {title}",
     "externalLink": "abre em nova aba",
-    "visualLabel": "Representação abstrata do projeto {title}"
+    "visualLabel": "Representação abstrata do projeto {title}",
+    "showMoreTechnologies": "Mostrar mais {count} tecnologias de {title}",
+    "showFewerTechnologies": "Recolher tecnologias de {title}",
+    "showFewer": "Menos"
   },
   "Status": {
     "WIP": "Em desenvolvimento",
@@ -69,22 +77,36 @@
   "Experience": {
     "professionalEyebrow": "Experiência profissional",
     "professionalTitle": "Experiências que conectam tecnologia, organização e colaboração.",
+    "currentBadge": "Atual",
     "resumeTitle": "Quer conhecer minha trajetória completa?",
     "resumeDescription": "Baixe meu currículo para conferir mais detalhes sobre minha formação, experiências e competências.",
     "resumeButton": "Baixar currículo",
-    "resumeUnavailable": "Currículo disponível em breve",
-    "academicEyebrow": "Atividades acadêmicas",
-    "academicTitle": "Pesquisa aplicada e inovação tecnológica."
+    "resumeUnavailable": "Currículo disponível em breve"
   },
   "Contact": {
     "eyebrow": "Contato",
-    "title": "Vamos construir algo juntos?",
-    "sendEmail": "Enviar e-mail"
+    "title": "Vamos construir algo incrível juntos?",
+    "description": "Estou disponível para oportunidades de estágio, desenvolvimento, projetos freelance e colaborações.",
+    "supportingCopy": "Caso tenha uma ideia ou queira conversar, será um prazer entrar em contato.",
+    "sendEmail": "Enviar e-mail",
+    "sendEmailAccessibleLabel": "Enviar e-mail para Braule Fernandes",
+    "emailLabel": "E-mail",
+    "githubTitle": "GitHub",
+    "githubDescription": "Veja meus projetos, código e contribuições.",
+    "linkedinTitle": "LinkedIn",
+    "linkedinDescription": "Conheça minha trajetória profissional.",
+    "emailTitle": "E-mail",
+    "emailDescription": "braulefernandesdev@gmail.com",
+    "emailAccessibleLabel": "Enviar e-mail para Braule Fernandes",
+    "locationTitle": "Localização",
+    "locationDescription": "Fortaleza • Ceará • Brasil",
+    "externalLink": "abre em nova aba"
   },
   "Footer": {
-    "developedBy": "Desenvolvido por {name}",
+    "professionalTitle": "Desenvolvedor.",
     "copyright": "© {year} {name}.",
-    "backToTop": "Voltar ao topo"
+    "backToTop": "Voltar ao topo",
+    "emailAccessibleLabel": "Enviar e-mail para Braule Fernandes"
   },
   "Social": {
     "github": "GitHub",

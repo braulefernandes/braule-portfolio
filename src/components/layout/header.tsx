@@ -6,7 +6,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { LanguageSwitcher } from "@/components/ui/language-switcher";
 import { Logo } from "@/components/ui/logo";
-import { ThemeToggle } from "@/components/ui/theme-toggle";
+// import { ThemeToggle } from "@/components/ui/theme-toggle";
 import { navigationLinks } from "@/data/navigation";
 
 import { Container } from "./container";

@@ -5,22 +5,22 @@ export const personalInfo = {
   visualSignature: "BrauleFernandes",
   compactSignature: "BF",
   professionalTitle: {
-    pt: "Desenvolvedor Full-Stack em formação",
+    pt: "Desenvolvedor Full Stack em formação",
     en: "Full Stack Developer in training",
   },
   shareTitle: "Full Stack Developer",
   heroDescription: {
-    pt: "Desenvolvedor Full Stack em formação, criando aplicações web, APIs e soluções digitais que transformam ideias em experiências funcionais e bem estruturadas.",
-    en: "A Full Stack Developer in training, building web applications, APIs, and digital solutions that turn ideas into functional, well-structured experiences.",
+    pt: "Entre linhas de código e boas ideias, crio aplicações web completas que unem tecnologia, experiência do usuário e soluções eficientes para problemas reais.",
+    en: "Between lines of code and great ideas, I build complete web applications that combine technology, user experience, and efficient solutions to real-world problems.",
   },
   aboutTitle: {
-    pt: "Tecnologia com propósito e organização.",
+    pt: "Tecnologia pensada para resolver e transformar.",
     en: "Technology built with purpose and structure.",
   },
   aboutParagraphs: {
     pt: [
-      "Sou estudante de Ciência da Computação na Universidade de Fortaleza, com conclusão prevista para 2026.2. Tenho experiência com desenvolvimento de aplicações web, APIs, bancos de dados, análise de dados e projetos de inteligência artificial.",
-      "Gosto de transformar problemas em soluções práticas, explorar novas tecnologias e desenvolver projetos que unam funcionalidade, organização e uma boa experiência para o usuário. Atualmente, busco oportunidades de estágio, desenvolvimento Júnior e projetos freelance nas áreas de Frontend, Backend e Full Stack.",
+      "Sou estudante de Ciência da Computação e encontrei no desenvolvimento de software uma forma de unir criatividade, raciocínio lógico e aprendizado constante.",
+      "Gosto de compreender necessidades, organizar ideias e construir experiências digitais simples, funcionais e bem estruturadas. Em cada projeto, busco evoluir tecnicamente, colaborar com outras pessoas e desenvolver soluções que façam sentido para quem as utiliza.",
     ],
     en: [
       "I am a Computer Science student at the University of Fortaleza, with expected graduation in the second semester of 2026. I have experience developing web applications and APIs, working with databases and data analysis, and building artificial intelligence projects.",

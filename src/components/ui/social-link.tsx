@@ -14,13 +14,15 @@ interface SocialLinkProps {
   link: SocialLinkType;
   className?: string;
   showExternalIndicator?: boolean;
+  accessibleLabel?: string;
 }
 
-export function SocialLink({ link, className = "", showExternalIndicator = true }: SocialLinkProps) {
+export function SocialLink({ link, className = "", showExternalIndicator = true, accessibleLabel }: SocialLinkProps) {
   const t = useTranslations("Social");
   return (
     <a
       href={link.url}
+      aria-label={accessibleLabel}
       target={link.external ? "_blank" : undefined}
       rel={link.external ? "noopener noreferrer" : undefined}
       className={`external-action inline-flex min-h-11 items-center gap-3 rounded-xl border border-border bg-surface px-4 text-sm font-semibold text-foreground transition-[border-color,color,box-shadow,transform] hover:border-primary hover:text-primary hover:shadow-[0_8px_24px_var(--shadow)] active:scale-[0.98] ${className}`}

@@ -4,9 +4,33 @@ export type LocalizedStringList = Record<PortfolioLocale, string[]>;
 export type ProjectStatus = "WIP" | "DONE";
 export type ProjectVisual = "route" | "tasks" | "network" | "detection";
 export type ExperienceKind = "professional" | "academic";
+export type ExperienceVisual = "technology" | "support" | "administration";
 export type SocialIcon = "github" | "linkedin" | "email";
 export type ExternalUrl = `https://${string}` | `http://${string}`;
 export type EmailUrl = `mailto:${string}`;
+export type AboutHighlightIcon = "activity" | "education" | "code" | "opportunity";
+export type AboutHighlightVariant = "current-role" | "education" | "focus" | "availability";
+export type CoreTechnologyVisual = "react" | "next" | "python" | "fastapi";
+export type SkillCategoryIcon = "frontend" | "backend" | "databases" | "tools";
+
+export interface CoreTechnology {
+  id: CoreTechnologyVisual;
+  name: string;
+  area: LocalizedText;
+  description: LocalizedText;
+  visual: CoreTechnologyVisual;
+}
+
+export interface AboutHighlight {
+  id: string;
+  eyebrow: LocalizedText;
+  title: LocalizedText;
+  subtitle?: LocalizedText;
+  description?: LocalizedText;
+  meta?: LocalizedText;
+  icon: AboutHighlightIcon;
+  variant: AboutHighlightVariant;
+}
 
 export interface ContactInfo {
   email: string;
@@ -78,12 +102,16 @@ export interface Experience {
   type?: LocalizedText;
   location?: LocalizedText;
   description: LocalizedText;
+  isCurrent?: boolean;
+  visual: ExperienceVisual;
 }
 
 export interface SkillCategory {
   id: "frontend" | "backend" | "databases" | "tools";
   name: LocalizedText;
+  description: LocalizedText;
   skills: string[];
+  icon: SkillCategoryIcon;
 }
 
 export interface SocialLink {

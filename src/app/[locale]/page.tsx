@@ -4,7 +4,6 @@ import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { AboutSection } from "@/components/sections/about-section";
 import { ContactSection } from "@/components/sections/contact-section";
-import { EducationSection } from "@/components/sections/education-section";
 import { ExperienceSection } from "@/components/sections/experience-section";
 import { Hero } from "@/components/sections/hero";
 import { ProjectsSection } from "@/components/sections/projects-section";
@@ -20,7 +19,6 @@ export default async function Home({ params }: { params: Promise<{ locale: strin
       <main>
         <Hero />
         <AboutSection />
-        <EducationSection />
         <ProjectsSection />
         <TechnologiesSection />
         <ExperienceSection />

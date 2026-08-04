@@ -1,15 +1,13 @@
 import { useTranslations } from "next-intl";
 
 import { Section } from "@/components/layout/section";
+import { ExperienceTopographicBackground } from "@/components/decorations/experience-topographic-background";
 import { buttonStyles } from "@/components/ui/button";
 import { ExperienceTimeline } from "@/components/ui/experience-timeline";
 import { InteractiveGlow } from "@/components/ui/interactive-glow";
 import { SectionTitle } from "@/components/ui/section-title";
-import { getExperiencesByKind } from "@/data/experiences";
+import { experiences } from "@/data/experiences";
 import { hasPublishedResume, resumePath } from "@/lib/resume";
-
-const professionalExperiences = getExperiencesByKind("professional");
-const academicExperiences = getExperiencesByKind("academic");
 
 function DownloadIcon() {
   return (
@@ -19,20 +17,36 @@ function DownloadIcon() {
   );
 }
 
+function ResumeIcon() {
+  return (
+    <svg aria-hidden="true" viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="1.7">
+      <path d="M6 3h8l4 4v14H6z" /><path d="M14 3v5h5M9 12h6M9 16h6" />
+    </svg>
+  );
+}
+
 export function ExperienceSection() {
   const t = useTranslations("Experience");
   const resumeAvailable = hasPublishedResume();
   return (
-    <>
-      <Section id="experiencia" aria-labelledby="experience-title" className="scroll-mt-18 border-t border-border bg-background">
-        <SectionTitle eyebrow={t("professionalEyebrow")} title={t("professionalTitle")} id="experience-title" />
-        <ExperienceTimeline items={professionalExperiences} />
+    <Section id="experiencia" aria-labelledby="experience-title" className="experience-section relative isolate scroll-mt-18 overflow-hidden border-t border-border" containerClassName="experience-content relative z-10">
+        <ExperienceTopographicBackground />
+        <SectionTitle eyebrow={t("professionalEyebrow")} title={t("professionalTitle")} id="experience-title" className="experience-heading" />
+        <ExperienceTimeline items={experiences} />
+        <div aria-hidden="true" className="resume-divider-wrap">
+          <div className="resume-divider">
+            <span />
+            <ResumeIcon />
+            <span />
+          </div>
+        </div>
         <aside
           aria-labelledby="resume-title"
-          className="interactive-surface mt-10 flex flex-col gap-6 rounded-2xl border border-border bg-surface p-5 transition-[background-color,border-color,box-shadow] sm:p-6 lg:flex-row lg:items-center lg:justify-between"
+          className="resume-callout interactive-surface mt-5 flex flex-col gap-5 rounded-2xl border border-border p-5 sm:p-6 lg:mt-6 lg:flex-row lg:items-center lg:gap-6"
         >
           <InteractiveGlow />
-          <div className="max-w-2xl">
+          <div className="resume-document-icon"><ResumeIcon /></div>
+          <div className="min-w-0 flex-1">
             <h3 id="resume-title" className="text-lg sm:text-xl">{t("resumeTitle")}</h3>
             <p className="mt-2 text-sm leading-7 text-muted">{t("resumeDescription")}</p>
           </div>
@@ -57,11 +71,5 @@ export function ExperienceSection() {
           )}
         </aside>
       </Section>
-
-      <Section id="atividades-academicas" aria-labelledby="academic-title" className="scroll-mt-18 border-t border-border bg-background-secondary">
-        <SectionTitle eyebrow={t("academicEyebrow")} title={t("academicTitle")} id="academic-title" />
-        <ExperienceTimeline items={academicExperiences} />
-      </Section>
-    </>
   );
 }
