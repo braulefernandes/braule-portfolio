@@ -29,7 +29,7 @@ export function ExperienceSection() {
   const t = useTranslations("Experience");
   const resumeAvailable = hasPublishedResume();
   return (
-    <Section id="experiencia" aria-labelledby="experience-title" className="experience-section relative isolate scroll-mt-18 overflow-hidden border-t border-border" containerClassName="experience-content relative z-10">
+    <Section anchorId="experiencia" aria-labelledby="experience-title" className="experience-section relative isolate overflow-hidden border-t border-border" containerClassName="experience-content relative z-10">
         <ExperienceTopographicBackground />
         <SectionTitle eyebrow={t("professionalEyebrow")} title={t("professionalTitle")} id="experience-title" className="experience-heading" />
         <ExperienceTimeline items={experiences} />

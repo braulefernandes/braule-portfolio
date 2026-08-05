@@ -17,19 +17,21 @@ export function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
   const firstLinkRef = useRef<HTMLAnchorElement>(null);
   const menuButtonRef = useRef<HTMLButtonElement>(null);
+  const previousOverflowRef = useRef("");
   const reduceMotion = useReducedMotion();
 
   useEffect(() => {
     if (!isOpen) return;
 
     const previousOverflow = document.body.style.overflow;
+    previousOverflowRef.current = previousOverflow;
     document.body.style.overflow = "hidden";
     firstLinkRef.current?.focus();
 
     function handleEscape(event: KeyboardEvent) {
       if (event.key === "Escape") {
         setIsOpen(false);
-        window.requestAnimationFrame(() => menuButtonRef.current?.focus());
+        window.requestAnimationFrame(() => menuButtonRef.current?.focus({ preventScroll: true }));
       }
     }
 
@@ -66,8 +68,9 @@ export function Header() {
   }, []);
 
   function closeMenu() {
+    document.body.style.overflow = previousOverflowRef.current;
     setIsOpen(false);
-    window.requestAnimationFrame(() => menuButtonRef.current?.focus());
+    window.requestAnimationFrame(() => menuButtonRef.current?.focus({ preventScroll: true }));
   }
 
   return (

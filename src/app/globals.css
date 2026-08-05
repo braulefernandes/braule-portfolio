@@ -2,6 +2,8 @@
 
 :root {
   color-scheme: light;
+  --header-height: 4.5rem;
+  --anchor-gap: 0.75rem;
   --background: #f8fafc;
   --background-secondary: #f1f5f9;
   --surface: #ffffff;
@@ -159,7 +161,15 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 4.5rem;
+  scroll-padding-top: calc(var(--header-height) + var(--anchor-gap));
+}
+
+.scroll-anchor {
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 
 body {
@@ -1619,5 +1629,48 @@ a:not([class]):hover {
   .site-header [role="group"] button {
     min-width: 2.1rem;
     padding-inline: 0.35rem;
+  }
+}
+
+/* Dev Runner: one stable, compact card for launcher and gameplay. */
+.footer-main-grid { display: grid; align-items: center; gap: 1.25rem 1.5rem; }
+.dev-runner-card { min-width: 0; height: 8.75rem; overflow: hidden; border: 1px solid var(--border); border-radius: 1rem; background: color-mix(in srgb, var(--surface) 72%, transparent); box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--glow-primary) 35%, transparent), 0 8px 24px color-mix(in srgb, var(--shadow) 50%, transparent); }
+.dev-runner-launcher { display: flex; width: 100%; height: 100%; align-items: center; justify-content: space-between; gap: 1rem; padding: .875rem 1.5rem; }
+.dev-runner-launcher-title { color: var(--foreground); font-size: 1.125rem; font-weight: 700; line-height: 1.25; letter-spacing: -.01em; }
+.dev-runner-launcher-button:hover { box-shadow: 0 8px 22px var(--glow-primary); }
+.dev-runner-compact-game { display: grid; height: 100%; grid-template-rows: 1.25rem minmax(0, 1fr) 1rem; gap: .2rem; padding: .4rem .55rem; }
+.dev-runner-toolbar, .dev-runner-controls { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.dev-runner-score { color: var(--foreground); font-family: var(--font-mono); font-size: .65rem; font-weight: 700; letter-spacing: .04em; white-space: nowrap; }
+.dev-runner-close { display: grid; width: 1.75rem; height: 1.75rem; flex: none; place-items: center; border: 0; border-radius: .4rem; background: transparent; padding: 0; color: var(--muted); font-size: 1.15rem; line-height: 1; cursor: pointer; }
+.dev-runner-close:hover { color: var(--foreground); }
+.dev-runner-motion-notice { max-width: 48%; overflow: hidden; color: var(--muted); font-size: .58rem; text-overflow: ellipsis; white-space: nowrap; }
+.dev-runner-stage { position: relative; overflow: hidden; min-height: 0; border-radius: .55rem; background: linear-gradient(150deg, color-mix(in srgb, var(--surface-elevated) 92%, var(--primary) 8%), color-mix(in srgb, var(--background-secondary) 94%, var(--accent) 6%)); touch-action: manipulation; }
+.dev-runner-canvas { display: block; width: 100%; height: 100%; cursor: pointer; }
+.dev-runner-overlay { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; gap: .45rem; background: color-mix(in srgb, var(--overlay) 68%, transparent); padding: .3rem; text-align: center; backdrop-filter: blur(2px); }
+.dev-runner-overlay strong { font-family: var(--font-mono); font-size: .7rem; }
+.dev-runner-overlay span { color: var(--muted); font-family: var(--font-mono); font-size: .58rem; white-space: nowrap; }
+.dev-runner-compact-button { min-height: 2rem; height: 2rem; padding-inline: .65rem; font-size: .68rem; white-space: nowrap; }
+.dev-runner-pause-actions { display: inline-flex; gap: .35rem; }
+.dev-runner-controls { min-width: 0; color: var(--muted); font-family: var(--font-mono); font-size: .58rem; white-space: nowrap; }
+@media (max-width: 639px) {
+  .dev-runner-card { height: 9.5rem; }
+  .dev-runner-launcher { align-items: stretch; flex-direction: column; justify-content: center; }
+  .dev-runner-launcher-button { width: 100%; }
+  .dev-runner-overlay { flex-wrap: wrap; }
+}
+@media (min-width: 640px) {
+  .dev-runner-launcher-title { font-size: 1.25rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .dev-runner-launcher-button { transition: none; transform: none; }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .footer-main-grid { grid-template-columns: minmax(11rem, .75fr) minmax(22rem, 1.25fr); }
+  .footer-socials { grid-column: 1 / -1; }
+}
+@media (min-width: 1024px) {
+  .footer-main-grid {
+    grid-template-columns: max-content clamp(23rem, calc(100vw - 40rem), 33.25rem) max-content;
+    justify-content: space-between;
   }
 }

@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 
 import { Container } from "@/components/layout/container";
+import { DevRunnerFooter } from "@/components/game/dev-runner-footer";
 import { ChevronIcon } from "@/components/icons/chevron-icon";
 import { SocialLink } from "@/components/ui/social-link";
 import { personalInfo } from "@/data/personal-info";
@@ -13,13 +14,15 @@ export function Footer() {
   return (
     <footer className="border-t border-border bg-background-secondary py-10 lg:py-12">
       <Container>
-        <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
-          <div>
+        <div className="footer-main-grid">
+          <div className="footer-identity">
             <p className="font-semibold text-foreground">{personalInfo.name}</p>
             <p className="mt-1 text-sm text-muted">{t("professionalTitle")}</p>
           </div>
 
-          <div className="flex flex-wrap gap-2 md:justify-end">
+          <DevRunnerFooter />
+
+          <div className="footer-socials flex flex-wrap gap-2 md:justify-end">
             {socialLinks.map((link) => (
               <SocialLink
                 key={link.id}

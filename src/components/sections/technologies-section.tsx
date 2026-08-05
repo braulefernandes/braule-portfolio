@@ -1,6 +1,7 @@
 import { useTranslations } from "next-intl";
 
 import { Container } from "@/components/layout/container";
+import { SectionAnchor } from "@/components/layout/section";
 import { SkillsOrbitBackground } from "@/components/decorations/skills-orbit-background";
 import { CoreTechnologyCard } from "@/components/skills/core-technology-card";
 import { SkillCategoryCard } from "@/components/skills/skill-category-card";
@@ -11,9 +12,10 @@ import { coreTechnologies, skillCategories } from "@/data/skills";
 export function TechnologiesSection() {
   const t = useTranslations("Technologies");
   return (
-    <section id="tecnologias" aria-labelledby="technologies-title" className="skills-section relative isolate scroll-mt-18 overflow-hidden border-t border-border py-16 sm:py-16 lg:py-20 xl:py-24">
+    <section aria-labelledby="technologies-title" className="skills-section relative isolate overflow-hidden border-t border-border py-16 sm:py-16 lg:py-20 xl:py-24">
       <SkillsOrbitBackground />
       <Container className="relative z-10">
+      <SectionAnchor id="tecnologias" />
       <SectionTitle
         eyebrow={t("eyebrow")}
         title={t("title")}

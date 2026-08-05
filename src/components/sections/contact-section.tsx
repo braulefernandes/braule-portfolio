@@ -82,7 +82,7 @@ export function ContactSection() {
   ];
 
   return (
-    <Section id="contato" aria-labelledby="contact-title" className="contact-section relative isolate scroll-mt-18 overflow-hidden border-t border-border">
+    <Section anchorId="contato" aria-labelledby="contact-title" className="contact-section relative isolate overflow-hidden border-t border-border">
       <div aria-hidden="true" className="contact-atmosphere" />
       <div className="contact-layout relative z-10 grid gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(26rem,0.9fr)] lg:gap-14 xl:grid-cols-[minmax(0,1fr)_minmax(30rem,0.9fr)] xl:gap-20">
         <div className="contact-intro">

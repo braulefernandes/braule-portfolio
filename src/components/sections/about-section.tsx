@@ -2,6 +2,7 @@ import { useLocale, useTranslations } from "next-intl";
 
 import { AboutBackground } from "@/components/decorations/about-background";
 import { Container } from "@/components/layout/container";
+import { SectionAnchor } from "@/components/layout/section";
 import { Reveal } from "@/components/ui/motion";
 import { personalInfo } from "@/data/personal-info";
 import { getLocalizedText, toPortfolioLocale } from "@/utils/localized-content";
@@ -12,9 +13,10 @@ export function AboutSection() {
   const locale = useLocale();
   const portfolioLocale = toPortfolioLocale(locale);
   return (
-    <section id="sobre" aria-labelledby="about-title" className="about-section relative scroll-mt-18 overflow-hidden border-t border-border py-16 lg:py-20 xl:py-15">
+    <section aria-labelledby="about-title" className="about-section relative overflow-hidden border-t border-border py-16 lg:py-20 xl:py-15">
       <AboutBackground />
       <Container className="relative z-10">
+        <SectionAnchor id="sobre" />
         <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,1.15fr)_minmax(22rem,0.85fr)] lg:gap-12 xl:gap-16">
           <div className="min-w-0 max-w-3xl">
             <Reveal>

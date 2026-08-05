@@ -8,10 +8,10 @@ export const education = {
   },
   institution: {
     pt: "Universidade de Fortaleza — UNIFOR",
-    en: "University of Fortaleza — UNIFOR",
+    en: "Universidade de Fortaleza — UNIFOR",
   },
   institutionAcronym: "UNIFOR",
   startYear: "2023",
   expectedGraduation: "2026.2",
-  location: { pt: "Fortaleza, Ceará", en: "Fortaleza, Brazil" },
+  location: { pt: "Fortaleza, Ceará", en: "Fortaleza, Ceará, Brazil" },
 } satisfies Education;

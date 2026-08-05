@@ -24,15 +24,15 @@
     "title": "Theme: {theme}"
   },
   "Hero": {
-    "greeting": "Hello, I'm",
+    "greeting": "Hi, I'm",
     "caricatureAlt": "Caricature of Braule Fernandes wearing a headset and holding a cup of coffee",
-    "technologiesLabel": "Core technologies",
-    "projectsButton": "Explore my projects",
-    "experienceButton": "View my experience",
-    "contactButton": "Get in touch"
+    "technologiesLabel": "Core Technologies",
+    "projectsButton": "View My Projects",
+    "experienceButton": "View My Experience",
+    "contactButton": "Get in Touch"
   },
   "About": {
-    "eyebrow": "About me",
+    "eyebrow": "About Me",
     "highlights": {
       "locationLabel": "Location",
       "availabilityLabel": "Availability",
@@ -43,56 +43,56 @@
   },
   "Education": {
     "eyebrow": "Education",
-    "title": "Building a strong foundation in computer science."
+    "title": "Building a Strong Foundation in Computer Science."
   },
   "Technologies": {
-    "eyebrow": "Technologies and skills",
-    "title": "Tools for building complete solutions.",
+    "eyebrow": "Technologies & Skills",
+    "title": "Tools for Building Complete Solutions.",
     "description": "Technologies used across web applications, APIs, data work, and artificial intelligence projects.",
-    "coreTitle": "Core technologies",
-    "ecosystemTitle": "Skills ecosystem",
-    "ecosystemConnector": "Full Stack ecosystem",
-    "featuredLabel": "Featured technologies",
+    "coreTitle": "Core Technologies",
+    "ecosystemTitle": "Skills Ecosystem",
+    "ecosystemConnector": "Full Stack Ecosystem",
+    "featuredLabel": "Featured Technologies",
     "categoryLabel": "Technologies in {category}"
   },
   "Projects": {
     "eyebrow": "Projects",
-    "title": "Ideas turned into functional solutions.",
-    "description": "Full Stack, academic, and artificial intelligence projects developed to solve real problems and explore different areas of technology.",
-    "inProgressGroup": "In progress",
+    "title": "Ideas Turned into Functional Solutions.",
+    "description": "Full-stack, academic, and artificial intelligence projects developed to solve real-world problems and explore different areas of technology.",
+    "inProgressGroup": "In Development",
     "completedGroup": "Completed",
-    "problemLabel": "Problem addressed",
+    "problemLabel": "Problem It Solves",
     "technologiesLabel": "Technologies used in {title}",
     "repositoriesLabel": "Repositories for {title}",
     "externalLink": "opens in a new tab",
     "visualLabel": "Abstract representation of the {title} project",
     "showMoreTechnologies": "Show {count} more technologies used in {title}",
     "showFewerTechnologies": "Collapse technologies used in {title}",
-    "showFewer": "Less"
+    "showFewer": "Show Fewer"
   },
   "Status": {
-    "WIP": "In progress",
+    "WIP": "In Development",
     "DONE": "Completed"
   },
   "Experience": {
-    "professionalEyebrow": "Professional experience",
-    "professionalTitle": "Experience connecting technology, organization, and collaboration.",
+    "professionalEyebrow": "Professional Experience",
+    "professionalTitle": "Experiences That Connect Technology, Organization, and Collaboration.",
     "currentBadge": "Current",
-    "resumeTitle": "Want to see my full professional journey?",
-    "resumeDescription": "Download my résumé to learn more about my education, experience and skills.",
-    "resumeButton": "Download résumé",
-    "resumeUnavailable": "Résumé available soon"
+    "resumeTitle": "Want to See My Full Journey?",
+    "resumeDescription": "Download my résumé to learn more about my education, professional experience, and skills.",
+    "resumeButton": "Download Résumé",
+    "resumeUnavailable": "Résumé Available Soon"
   },
   "Contact": {
     "eyebrow": "Contact",
-    "title": "Let's build something together.",
-    "description": "I am available for internships, Junior Full Stack roles, freelance projects, and collaborations.",
-    "supportingCopy": "If you have an idea or would like to talk, I would be glad to connect.",
-    "sendEmail": "Send email",
+    "title": "Let's Build Something Amazing Together?",
+    "description": "I am available for internship and development opportunities, freelance projects, and collaborations.",
+    "supportingCopy": "If you have an idea or would like to talk, I would be happy to connect.",
+    "sendEmail": "Send Email",
     "sendEmailAccessibleLabel": "Send an email to Braule Fernandes",
     "emailLabel": "Email",
     "githubTitle": "GitHub",
-    "githubDescription": "See my projects, code and contributions.",
+    "githubDescription": "Explore my projects, code, and contributions.",
     "linkedinTitle": "LinkedIn",
     "linkedinDescription": "Learn more about my professional journey.",
     "emailTitle": "Email",
@@ -102,10 +102,30 @@
     "locationDescription": "Fortaleza • Ceará • Brazil",
     "externalLink": "opens in a new tab"
   },
+  "DevRunner": {
+    "footerTitle": "Dev Runner",
+    "footerPlayButton": "Play",
+    "shortScoreLabel": "PTS",
+    "shortBestScoreLabel": "BEST",
+    "startButton": "Start",
+    "restartButton": "Play Again",
+    "closeButton": "Close Game",
+    "jumpButton": "Jump",
+    "jumpInstructions": "Space, ↑, or Tap",
+    "gameDescription": "Jump over the bugs.",
+    "gameOverTitle": "Bug Found!",
+    "scoreLabel": "Score",
+    "bestScoreLabel": "Best",
+    "accessibilityLabel": "Dev Runner mini-game. Jump over the bugs to increase your score.",
+    "reducedMotionNotice": "This game uses motion. Start only if you are comfortable.",
+    "pausedTitle": "Game Paused",
+    "resumeButton": "Resume",
+    "pausedRestartButton": "Restart"
+  },
   "Footer": {
-    "professionalTitle": "Full Stack Developer in training.",
+    "professionalTitle": "Developer.",
     "copyright": "© {year} {name}.",
-    "backToTop": "Back to top",
+    "backToTop": "Back to Top",
     "emailAccessibleLabel": "Send an email to Braule Fernandes"
   },
   "Social": {

@@ -14,7 +14,7 @@ export function Hero() {
   const t = useTranslations("Hero");
   const locale = useLocale();
   return (
-    <section id="inicio" aria-labelledby="hero-title" className="hero-grid relative flex min-h-[100svh] scroll-mt-18 items-center overflow-hidden pt-18">
+    <section id="inicio" aria-labelledby="hero-title" className="hero-grid relative flex min-h-[100svh] items-center overflow-hidden pt-18">
       <InteractiveBackground />
       <Container className="relative z-10 grid items-center gap-12 py-16 lg:grid-cols-[minmax(0,1.15fr)_minmax(18rem,0.85fr)] lg:gap-10 lg:pb-5 lg:pt-5 xl:gap-16">
         <HeroEntrance className="max-w-3xl">

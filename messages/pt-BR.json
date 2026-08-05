@@ -102,6 +102,26 @@
     "locationDescription": "Fortaleza • Ceará • Brasil",
     "externalLink": "abre em nova aba"
   },
+  "DevRunner": {
+    "footerTitle": "Dev Runner",
+    "footerPlayButton": "Jogar",
+    "shortScoreLabel": "PTS",
+    "shortBestScoreLabel": "REC",
+    "startButton": "Iniciar",
+    "restartButton": "Jogar novamente",
+    "closeButton": "Fechar jogo",
+    "jumpButton": "Pular",
+    "jumpInstructions": "Espaço, ↑ ou toque",
+    "gameDescription": "Desvie dos bugs.",
+    "gameOverTitle": "Bug encontrado!",
+    "scoreLabel": "Pontos",
+    "bestScoreLabel": "Recorde",
+    "accessibilityLabel": "Minijogo Dev Runner. Pule sobre os bugs para aumentar sua pontuação.",
+    "reducedMotionNotice": "Este jogo utiliza movimento. Inicie apenas se estiver confortável.",
+    "pausedTitle": "Jogo pausado",
+    "resumeButton": "Continuar",
+    "pausedRestartButton": "Reiniciar"
+  },
   "Footer": {
     "professionalTitle": "Desenvolvedor.",
     "copyright": "© {year} {name}.",

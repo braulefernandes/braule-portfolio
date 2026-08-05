@@ -37,7 +37,7 @@ export const coreTechnologies = [
     area: { pt: "Backend · APIs", en: "Backend · APIs" },
     description: {
       pt: "Construção de APIs modernas, rápidas e bem estruturadas com Python.",
-      en: "Building modern, fast and well-structured APIs with Python.",
+      en: "Building modern, fast, and well-structured APIs with Python.",
     },
     visual: "fastapi",
   },
@@ -78,7 +78,7 @@ export const skillCategories = [
   },
   {
     id: "tools",
-    name: { pt: "Ferramentas e outras áreas", en: "Tools and other areas" },
+    name: { pt: "Ferramentas e outras áreas", en: "Tools & Other Areas" },
     description: {
       pt: "Versionamento, design, análise de dados e inteligência artificial.",
       en: "Version control, design, data analysis, and artificial intelligence.",

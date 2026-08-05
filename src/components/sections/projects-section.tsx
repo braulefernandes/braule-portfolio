@@ -2,6 +2,7 @@ import { useTranslations } from "next-intl";
 
 import { ProjectsBackground } from "@/components/decorations/projects-background";
 import { Container } from "@/components/layout/container";
+import { SectionAnchor } from "@/components/layout/section";
 import { ProjectCard } from "@/components/ui/project-card";
 import { RevealGrid, RevealItem } from "@/components/ui/motion";
 import { SectionTitle } from "@/components/ui/section-title";
@@ -13,9 +14,10 @@ export function ProjectsSection() {
   const completed = projects.filter((project) => project.status === "DONE");
 
   return (
-    <section id="projetos" aria-labelledby="projects-title" className="projects-section relative isolate scroll-mt-18 overflow-hidden border-t border-border py-16 sm:py-24">
+    <section aria-labelledby="projects-title" className="projects-section relative isolate overflow-hidden border-t border-border py-16 sm:py-24">
       <ProjectsBackground />
       <Container className="projects-content relative z-10">
+        <SectionAnchor id="projetos" />
         <RevealGrid>
           <RevealItem>
             <SectionTitle eyebrow={t("eyebrow")} title={t("title")} description={t("description")} id="projects-title" />
