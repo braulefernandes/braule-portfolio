@@ -1,0 +1,140 @@
+{
+  "Header": {
+    "navigationLabel": "Navegação principal",
+    "mobileNavigationLabel": "Navegação mobile",
+    "openMenu": "Abrir menu de navegação",
+    "closeMenu": "Fechar menu de navegação",
+    "languageLabel": "Selecionar idioma",
+    "languageCurrent": "Idioma atual: Português",
+    "links": {
+      "home": "Início",
+      "about": "Sobre",
+      "projects": "Projetos",
+      "technologies": "Tecnologias",
+      "experience": "Experiência",
+      "contact": "Contato"
+    }
+  },
+  "Theme": {
+    "light": "Claro",
+    "dark": "Escuro",
+    "system": "Sistema",
+    "loading": "Carregando tema",
+    "currentAndNext": "Tema atual: {current}. Alterar para {next}.",
+    "title": "Tema: {theme}"
+  },
+  "Hero": {
+    "greeting": "Olá, eu sou",
+    "caricatureAlt": "Caricatura de Braule Fernandes usando headset e segurando um copo de café",
+    "technologiesLabel": "Tecnologias principais",
+    "projectsButton": "Conheça meus projetos",
+    "experienceButton": "Ver minhas experiências",
+    "contactButton": "Entre em contato"
+  },
+  "About": {
+    "eyebrow": "Sobre mim",
+    "highlights": {
+      "locationLabel": "Localização",
+      "availabilityLabel": "Disponibilidade",
+      "educationLabel": "Formação",
+      "graduationLabel": "Conclusão",
+      "graduationPrefix": "Conclusão prevista"
+    }
+  },
+  "Education": {
+    "eyebrow": "Formação",
+    "title": "Construindo uma base sólida em computação."
+  },
+  "Technologies": {
+    "eyebrow": "Tecnologias e competências",
+    "title": "Ferramentas para construir soluções completas.",
+    "description": "Tecnologias utilizadas em aplicações web, APIs, dados e projetos de inteligência artificial.",
+    "coreTitle": "Tecnologias principais",
+    "ecosystemTitle": "Ecossistema de competências",
+    "ecosystemConnector": "Ecossistema Full Stack",
+    "featuredLabel": "Tecnologias em destaque",
+    "categoryLabel": "Tecnologias de {category}"
+  },
+  "Projects": {
+    "eyebrow": "Projetos",
+    "title": "Ideias transformadas em soluções funcionais.",
+    "description": "Projetos Full Stack, acadêmicos e de inteligência artificial desenvolvidos para resolver problemas reais e explorar diferentes áreas da tecnologia.",
+    "inProgressGroup": "Em desenvolvimento",
+    "completedGroup": "Concluídos",
+    "problemLabel": "Problema que resolve",
+    "technologiesLabel": "Tecnologias do projeto {title}",
+    "repositoriesLabel": "Repositórios do projeto {title}",
+    "externalLink": "abre em nova aba",
+    "visualLabel": "Representação abstrata do projeto {title}",
+    "showMoreTechnologies": "Mostrar mais {count} tecnologias de {title}",
+    "showFewerTechnologies": "Recolher tecnologias de {title}",
+    "showFewer": "Menos"
+  },
+  "Status": {
+    "WIP": "Em desenvolvimento",
+    "DONE": "Concluído"
+  },
+  "Experience": {
+    "professionalEyebrow": "Experiência profissional",
+    "professionalTitle": "Experiências que conectam tecnologia, organização e colaboração.",
+    "currentBadge": "Atual",
+    "resumeTitle": "Quer conhecer minha trajetória completa?",
+    "resumeDescription": "Baixe meu currículo para conferir mais detalhes sobre minha formação, experiências e competências.",
+    "resumeButton": "Baixar currículo",
+    "resumeUnavailable": "Currículo disponível em breve"
+  },
+  "Contact": {
+    "eyebrow": "Contato",
+    "title": "Vamos construir algo incrível juntos?",
+    "description": "Estou disponível para oportunidades de estágio, desenvolvimento, projetos freelance e colaborações.",
+    "supportingCopy": "Caso tenha uma ideia ou queira conversar, será um prazer entrar em contato.",
+    "sendEmail": "Enviar e-mail",
+    "sendEmailAccessibleLabel": "Enviar e-mail para Braule Fernandes",
+    "emailLabel": "E-mail",
+    "githubTitle": "GitHub",
+    "githubDescription": "Veja meus projetos, código e contribuições.",
+    "linkedinTitle": "LinkedIn",
+    "linkedinDescription": "Conheça minha trajetória profissional.",
+    "emailTitle": "E-mail",
+    "emailDescription": "braulefernandesdev@gmail.com",
+    "emailAccessibleLabel": "Enviar e-mail para Braule Fernandes",
+    "locationTitle": "Localização",
+    "locationDescription": "Fortaleza • Ceará • Brasil",
+    "externalLink": "abre em nova aba"
+  },
+  "DevRunner": {
+    "footerTitle": "Dev Runner",
+    "footerPlayButton": "Jogar",
+    "shortScoreLabel": "PTS",
+    "shortBestScoreLabel": "REC",
+    "startButton": "Iniciar",
+    "restartButton": "Jogar novamente",
+    "closeButton": "Fechar jogo",
+    "jumpButton": "Pular",
+    "jumpInstructions": "Espaço, ↑ ou toque",
+    "gameDescription": "Desvie dos bugs.",
+    "gameOverTitle": "Bug encontrado!",
+    "scoreLabel": "Pontos",
+    "bestScoreLabel": "Recorde",
+    "accessibilityLabel": "Minijogo Dev Runner. Pule sobre os bugs para aumentar sua pontuação.",
+    "reducedMotionNotice": "Este jogo utiliza movimento. Inicie apenas se estiver confortável.",
+    "pausedTitle": "Jogo pausado",
+    "resumeButton": "Continuar",
+    "pausedRestartButton": "Reiniciar"
+  },
+  "Footer": {
+    "professionalTitle": "Desenvolvedor.",
+    "copyright": "© {year} {name}.",
+    "backToTop": "Voltar ao topo",
+    "emailAccessibleLabel": "Enviar e-mail para Braule Fernandes"
+  },
+  "Social": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "email": "E-mail",
+    "externalLink": "abre em nova aba"
+  },
+  "Accessibility": {
+    "homeLabel": "Braule Fernandes — página inicial"
+  }
+}

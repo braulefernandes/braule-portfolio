@@ -20,18 +20,14 @@
 # production
 /build
 
-# misc
-.DS_Store
-*.pem
+# caches
+/.turbo/
+/.cache/
+.eslintcache
 
-# debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-.pnpm-debug.log*
-
-# env files (can opt-in for committing if needed)
+# environment variables
 .env*
+!.env.example
 
 # vercel
 .vercel
@@ -39,3 +35,24 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# operating system
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# certificates and private keys
+*.pem
