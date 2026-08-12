@@ -48,7 +48,7 @@ export function ExperienceSection() {
           <div className="resume-document-icon"><ResumeIcon /></div>
           <div className="min-w-0 flex-1">
             <h3 id="resume-title" className="text-lg sm:text-xl">{t("resumeTitle")}</h3>
-            <p className="mt-2 text-sm leading-7 text-muted">{t("resumeDescription")}</p>
+            <p className="mt-2 text-justify text-sm leading-7 text-muted">{t("resumeDescription")}</p>
           </div>
           {resumeAvailable ? (
             <a
