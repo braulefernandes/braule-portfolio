@@ -74,10 +74,15 @@ function ContactCard({ item, externalLinkLabel }: { item: ContactItem; externalL
 
 export function ContactSection() {
   const t = useTranslations("Contact");
+  const emailAddress = emailLink.url.replace(/^mailto:/, "").split("?")[0];
+  const gmailComposeUrl =
+    "https://mail.google.com/mail/?view=cm&fs=1" +
+    `&to=${encodeURIComponent(emailAddress)}` +
+    `&su=${encodeURIComponent(t("emailSubject"))}`;
   const contactItems: ContactItem[] = [
     { id: "github", icon: "github", title: t("githubTitle"), description: t("githubDescription"), href: socialLinks.find((link) => link.id === "github")!.url, external: true },
     { id: "linkedin", icon: "linkedin", title: t("linkedinTitle"), description: t("linkedinDescription"), href: socialLinks.find((link) => link.id === "linkedin")!.url, external: true },
-    { id: "email", icon: "email", title: t("emailTitle"), description: t("emailDescription"), href: emailLink.url, accessibleLabel: t("emailAccessibleLabel") },
+    { id: "email", icon: "email", title: t("emailTitle"), description: t("emailDescription"), href: gmailComposeUrl, external: true, accessibleLabel: t("emailAccessibleLabel") },
     { id: "location", icon: "location", title: t("locationTitle"), description: t("locationDescription") },
   ];
 
@@ -89,7 +94,9 @@ export function ContactSection() {
           <SectionTitle eyebrow={t("eyebrow")} title={t("title")} description={t("description")} id="contact-title" />
           <p className="contact-supporting-copy">{t("supportingCopy")}</p>
           <a
-            href={emailLink.url}
+            href={gmailComposeUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             aria-label={t("sendEmailAccessibleLabel")}
             className={buttonStyles("primary", "contact-primary-action mt-8 h-12 w-full whitespace-nowrap px-5 text-base sm:w-auto")}
           >

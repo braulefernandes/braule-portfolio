@@ -25,7 +25,7 @@ export function AboutSection() {
                 {getLocalizedText(personalInfo.aboutTitle, locale)}
               </h2>
             </Reveal>
-            <Reveal delay={0.08} className="mt-6 space-y-4 text-base leading-8 text-muted sm:text-lg">
+            <Reveal delay={0.08} className="mt-6 space-y-4 text-justify text-base leading-8 text-muted sm:text-lg">
               {personalInfo.aboutParagraphs[portfolioLocale].map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
             </Reveal>
             <Reveal delay={0.14}>

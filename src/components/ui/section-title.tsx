@@ -25,7 +25,7 @@ export function SectionTitle({
       <div className={`flex max-w-2xl flex-col ${alignment} ${className}`} {...props}>
         {eyebrow ? <p className="eyebrow">{eyebrow}</p> : null}
         <h2 id={id} className="mt-3 text-3xl sm:text-4xl">{title}</h2>
-        {description ? <p className="mt-4 leading-7 text-muted">{description}</p> : null}
+        {description ? <p className="mt-4 text-justify leading-7 text-muted">{description}</p> : null}
       </div>
     </Reveal>
   );

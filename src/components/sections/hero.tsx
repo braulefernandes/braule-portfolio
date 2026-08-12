@@ -25,7 +25,7 @@ export function Hero() {
               {personalInfo.name}.
             </span>
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-muted sm:text-lg">
+          <p className="mt-6 max-w-2xl text-justify text-base leading-8 text-muted sm:text-lg">
             {getLocalizedText(personalInfo.heroDescription, locale)}
           </p>
 

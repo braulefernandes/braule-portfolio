@@ -57,11 +57,11 @@ export function ProjectCard({ project, variant = "featured" }: ProjectCardProps)
         </div>
 
         <h4 className={variant === "compact" ? "mt-3 text-lg sm:text-xl" : "mt-4 text-xl sm:text-2xl"}>{project.title}</h4>
-        <p className={`project-description mt-2 text-sm text-muted ${variant === "featured" ? "leading-7" : "leading-6"}`}>{getLocalizedText(project.description, locale)}</p>
+        <p className={`project-description mt-2 text-justify text-sm text-muted ${variant === "featured" ? "leading-7" : "leading-6"}`}>{getLocalizedText(project.description, locale)}</p>
 
         <div className={`project-problem ${variant === "compact" ? "mt-3 py-1 pl-3" : "mt-4 py-1.5 pl-4"}`}>
           <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.12em] text-foreground"><span aria-hidden="true">◇</span>{t("problemLabel")}</p>
-          <p className="mt-1 text-sm leading-6 text-muted">{getLocalizedText(project.problem, locale)}</p>
+          <p className="mt-1 text-justify text-sm leading-6 text-muted">{getLocalizedText(project.problem, locale)}</p>
         </div>
 
         <ul aria-label={t("technologiesLabel", { title: project.title })} className={`${variant === "compact" ? "mt-3" : "mt-4"} flex flex-wrap gap-2`}>
