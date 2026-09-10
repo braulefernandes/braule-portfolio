@@ -8,8 +8,8 @@ import { SectionTitle } from "@/components/ui/section-title";
 import { RevealGrid, RevealItem } from "@/components/ui/motion";
 import { InteractiveGlow } from "@/components/ui/interactive-glow";
 import { socialLinks } from "@/data/social-links";
+import { getGmailComposeUrl } from "@/lib/email";
 
-const emailLink = socialLinks.find((link) => link.id === "email")!;
 type ContactIcon = "github" | "linkedin" | "email" | "location";
 
 interface ContactItem {
@@ -74,11 +74,7 @@ function ContactCard({ item, externalLinkLabel }: { item: ContactItem; externalL
 
 export function ContactSection() {
   const t = useTranslations("Contact");
-  const emailAddress = emailLink.url.replace(/^mailto:/, "").split("?")[0];
-  const gmailComposeUrl =
-    "https://mail.google.com/mail/?view=cm&fs=1" +
-    `&to=${encodeURIComponent(emailAddress)}` +
-    `&su=${encodeURIComponent(t("emailSubject"))}`;
+  const gmailComposeUrl = getGmailComposeUrl(t("emailSubject"));
   const contactItems: ContactItem[] = [
     { id: "github", icon: "github", title: t("githubTitle"), description: t("githubDescription"), href: socialLinks.find((link) => link.id === "github")!.url, external: true },
     { id: "linkedin", icon: "linkedin", title: t("linkedinTitle"), description: t("linkedinDescription"), href: socialLinks.find((link) => link.id === "linkedin")!.url, external: true },
