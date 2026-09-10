@@ -6,9 +6,12 @@ import { ChevronIcon } from "@/components/icons/chevron-icon";
 import { SocialLink } from "@/components/ui/social-link";
 import { personalInfo } from "@/data/personal-info";
 import { socialLinks } from "@/data/social-links";
+import { getGmailComposeUrl } from "@/lib/email";
 
 export function Footer() {
   const t = useTranslations("Footer");
+  const contact = useTranslations("Contact");
+  const gmailComposeUrl = getGmailComposeUrl(contact("emailSubject"));
   const currentYear = new Date().getFullYear();
 
   return (
@@ -26,7 +29,7 @@ export function Footer() {
             {socialLinks.map((link) => (
               <SocialLink
                 key={link.id}
-                link={link}
+                link={link.id === "email" ? { ...link, url: gmailComposeUrl, external: true } : link}
                 showExternalIndicator={false}
                 accessibleLabel={link.id === "email" ? t("emailAccessibleLabel") : undefined}
                 className="footer-social-link bg-transparent px-4"

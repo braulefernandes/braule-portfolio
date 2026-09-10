@@ -9,8 +9,8 @@ export const experiences = [
     period: { pt: "2025 — Atual", en: "2025 — Present" },
     location: { pt: "Fortaleza, Ceará", en: "Fortaleza, Ceará, Brazil" },
     description: {
-      pt: "Atuação em atividades relacionadas à análise de dados, elaboração e organização de planilhas, suporte técnico e apoio a projetos de inovação nas áreas de tecnologia e medicina.",
-      en: "Work involving data analysis, spreadsheet creation and organization, technical support, and assistance with innovation projects across technology and medicine.",
+      pt: "Atuei no desenvolvimento de atividades de pesquisa clínica, com foco em análise de dados, elaboração, organização e automação de planilhas, além do apoio a projetos de inovação nas áreas de tecnologia e medicina. Contribuí em reuniões técnicas e ofereci suporte à equipe em demandas que exigiram conhecimentos técnicos.",
+      en: "I worked on the development of clinical research activities, focusing on data analysis and the creation, organization, and automation of spreadsheets, as well as supporting innovation projects in the fields of technology and medicine. I contributed to technical meetings and provided support to the team on tasks requiring technical expertise.",
     },
     isCurrent: true,
     visual: "technology",

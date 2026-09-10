@@ -37,8 +37,8 @@ export const personalInfo = {
     en: ["Full Stack Development", "Frontend", "Backend"],
   },
   goals: {
-    pt: ["Estágio", "Desenvolvedor Júnior", "Freelance"],
-    en: ["Internship", "Junior Developer", "Freelance Projects"],
+    pt: ["Desenvolvedor Júnior", "Freelance"],
+    en: ["Junior Developer", "Freelance Projects"],
   },
   location: {
     city: "Fortaleza",
@@ -47,7 +47,7 @@ export const personalInfo = {
     display: { pt: "Fortaleza, Ceará", en: "Fortaleza, Ceará, Brazil" },
   },
   contactMessage: {
-    pt: "Estou aberto a oportunidades de estágio, desenvolvimento Júnior, projetos freelance e colaborações. Entre em contato para conversarmos sobre oportunidades ou ideias.",
+    pt: "Estou aberto a oportunidades de desenvolvimento Júnior, projetos freelance e colaborações. Entre em contato para conversarmos sobre oportunidades ou ideias.",
     en: "I am open to internship and junior development opportunities, freelance projects, and collaborations. Get in touch to discuss opportunities or ideas.",
   },
   contacts: {

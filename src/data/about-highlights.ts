@@ -45,8 +45,8 @@ export const aboutHighlights = [
     eyebrow: { pt: "Oportunidades", en: "Opportunities" },
     title: { pt: "Disponível", en: "Available" },
     description: {
-      pt: "Estágio · Desenvolvedor Júnior · Freelance",
-      en: "Internship · Junior Developer · Freelance Projects",
+      pt: "Desenvolvedor Júnior · Freelance",
+      en: "Junior Developer · Freelance Projects",
     },
     meta: { pt: "Fortaleza, Ceará", en: "Fortaleza, Ceará, Brazil" },
     icon: "opportunity",
